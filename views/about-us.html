@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Heavy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-roboto">
+    <div class="sidebar fixed top-0 bottom-0 -left-80 lg:hidden bg-primary w-80 shadow-md z-50 p-4 overflow-y-auto">
+        <div class="flex justify-between text-white items-center">
+            <img src="../public/img/logo.png" alt="Logo" class="max-lg:mr-8">
+            <div class="cursor-pointer px-4" onclick="Open()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <div class="py-6">
+            <ul class="text-white [&>li]:my-4 [&>li]:pl-4 [&>li]:py-4">
+                <li class="hover-side" onclick="window.location.href='./index.html'"><i class="bi bi-house-door-fill mr-4"></i>Home</li>
+                <li class="rounded-lg bg-slate-400 cursor-pointer transition-all duration-300" onclick="window.location.href='./product.html'"><i class="bi bi-grid-1x2-fill mr-4"></i>Our Unit</li>
+                <li class="hover-side" onclick="window.location.href='./contact-us.html'"><i class="bi bi-telephone-inbound-fill mr-4"></i>Contact Us</li>
+                <li class="hover-side" onclick="window.location.href='./index.html'"><i class="bi bi-question-circle-fill mr-4"></i>About Us</li>
+                <li class="hover-side" onclick="window.location.href='./blog.html'">./<i class="bi bi-front mr-4"></i>Blog</li>
+            </ul>
+        </div>
+    </div>
+    <section class="bg-about bg-cover text-white">
+        <header class="bg-primary py-2">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <img src="../public/img/logo.png" alt="Logo">
+                    <ul class="flex justify-between w-[500px] [&>li>a:hover]:text-slate-300 max-lg:[&>li]:hidden">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Our Unit</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./about-us.html" class="text-secondary">About Us</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=6282337719901" class="bg-secondary rounded-md py-3 px-5 hover:bg-amber-600 duration-300 max-lg:hidden" target="_blank"><i class="fab fa-lg fa-whatsapp mr-2"></i>Contact Us</a>
+                    <button class="lg:hidden sm:ml-8 max-[640px]:ml-8 text-2xl" onclick="Open()">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="container mx-auto">
+            <div class="py-20 max-w-xl">
+                <h2 class="text-4xl font-semibold mb-6">About Us</h2>
+                <p class="font-poppins leading-7">Lorem ipsum dolor sit amet consectetur. Egestas ultrices eget amet massa pulvinar rhoncus. Feugiat enim facilisis fames hac. Cras lacus sapien tellus accumsan leo.</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-smoke">
+        <div class="container mx-auto">
+            <div class="flex justify-between py-20 lg:flex-row max-lg:flex-col items-center">
+                <div>
+                    <img src="../public/img/about-pic.png" class="lg:max-xl:w-[80%]">
+                </div>
+                <div class="xl:max-w-lg lg:max-w-md max-lg:mt-8 max-lg:text-center">
+                    <h2 class="font-semibold text-5xl mb-4">About us</h2>
+                    <p class="font-poppins text-md mb-4">Lorem ipsum dolor sit amet consectetur. Libero id sapien eu risus mauris eu non donec augue.</p>
+                    <p class="font-poppins text-md">Diam euismod pellentesque tempus enim adipiscing iaculis nam egestas. Consectetur ac dolor neque nulla in ultricies turpis habitasse massa. Vitae aliquet vitae nisi et. Volutpat purus erat amet augue venenatis et.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-divider bg-cover text-white">
+        <div class="text-center">
+            <h2 class="font-semibold text-5xl pt-12 pb-52">Our Vision & Mision</h2>
+        </div>
+    </section>
+    <section class="bg-smoke relative">
+        <div class="container mx-auto">
+            <div class="flex absolute -top-32 max-lg:flex-col">
+                <div class="bg-white pb-16 pt-8 shadow-lg xl:max-w-[540px] lg:max-w-[440px] pl-6 pr-12 mr-10">
+                    <div class="flex">
+                        <h3 class="font-semibold text-2xl mb-6 mr-4">Vision</h3>
+                        <div class="border-t-2 border-secondary w-20 mt-4"></div>
+                    </div>
+                    <p class="font-poppins text-paragraph">Diam euismod pellentesque tempus enim adipiscing iaculis nam egestas. Consectetur ac dolor neque nulla in ultricies turpis habitasse massa. Vitae aliquet vitae nisi et. Volutpat purus erat amet augue venenatis et.</p>
+                </div>
+                <div class="bg-white pb-16 pt-8 shadow-lg xl:max-w-[540px] lg:max-w-[440px] pl-6 pr-12  mr-10 max-lg:mt-4">
+                    <div class="flex">
+                        <h3 class="font-semibold text-2xl mb-6 mr-4">Mision</h3>
+                        <div class="border-t-2 border-secondary w-20 mt-4"></div>
+                    </div>
+                    <p class="font-poppins text-paragraph">Diam euismod pellentesque tempus enim adipiscing iaculis nam egestas. Consectetur ac dolor neque nulla in ultricies turpis habitasse massa. Vitae aliquet vitae nisi et. Volutpat purus erat amet augue venenatis et.</p>
+                </div>
+            </div>
+            <div class="flex justify-between relative items-center pt-72 pb-72 max-lg:pt-[400px] max-[566px]:pt-[440px]">
+                <div class="lg:max-w-lg">
+                    <h2 class="font-semibold text-5xl mb-6">Lorem Ipsum</h2>
+                    <p class="font-poppins mb-6">Lorem ipsum dolor sit amet consectetur. Libero id sapien eu risus mauris eu non donec augue.</p>
+                    <p class="font-poppins">Diam euismod pellentesque tempus enim adipiscing iaculis nam egestas. Consectetur ac dolor neque nulla in ultricies turpis habitasse massa. Vitae aliquet vitae 
+                </div>
+                <div class="absolute bg-silver3 right-0 lg:max-xl:scale-75 lg:max-xl:-right-20 max-lg:hidden">
+                    <img src="../public/img/bego.png" class="z-50">
+                    <div class="border-smoke absolute border-[20px] border-b-transparent border-l-transparent top-0 right-0"></div>
+                    <div class="border-smoke absolute border-[20px] border-t-transparent border-r-transparent bottom-0 left-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary bg-footer bg-blend-multiply bg-cover relative text-slate-300 lg:pt-24 max-lg:pt-6" id="footer">
+        <div class="container mx-auto">
+            <div class="bg-accent absolute text-center xl:max-w-md sm:max-xl:max-w-xs max-sm:max-w-xs -top-10 p-10 max-sm:hidden">
+                <img src="../public/img/logo-footer.png" class="mb-6 mx-auto max-lg:w-[70%] max-md:w-[50%]">
+                <p class="font-poppins xl:text-base max-xl:text-sm">Lorem ipsum dolor sit amet consectetur. Libero id sapien eu risus mauris eu non donec augue. Diam euismod pellentesque tempus enim adipiscing iaculis nam egestas. Consectetur ac dolor neque nulla in ultricies turpis habitasse massa. Vitae aliquet vitae nisi et. Volutpat purus erat amet augue venenatis et.</p>
+                <ul class="flex justify-center mt-6 [&>li>a:hover]:text-white">
+                    <li><a href="#"><i class="fab fa-lg fa-facebook mx-6"></i></a></li>
+                    <li><a href="#"><i class="fab fa-lg fa-instagram mx-6"></i></a></li>
+                </ul>
+                <div class="border-secondaccent absolute border-[20px] border-t-transparent border-r-transparent top-0 -right-10"></div>
+                <div class="border-primary absolute border-[20px] border-t-transparent border-l-transparent bottom-0 right-0"></div>
+            </div>
+            <div class="flex sm:justify-end max-sm:justify-around">
+                <div class="grid xl:grid-cols-3 md:grid-cols-2 max-md:grid-cols-1 xl:w-[600px] lg:w-[460px] md:w-[300px] max-sm:grid-cols-3">
+                    <div>
+                        <h3 class="text-2xl font-semibold border-l-4 border-ambers pl-4 mb-6 text-white  max-sm:text-sm">Navigasi</h3>
+                        <ul class="[&>*]:mb-4 [&>li>a:hover]:text-white md:text-base max-md:text-sm  max-sm:text-xs">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Our Unit</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Article</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold border-l-4 border-ambers pl-4 mb-6 text-white  max-sm:text-sm">Product</h3>
+                        <ul class="[&>*]:mb-4 [&>li>a:hover]:text-white md:text-base max-md:text-sm  max-sm:text-xs">
+                            <li><a href="#">Excavator</a></li>
+                            <li><a href="#">Bulldozer</a></li>
+                            <li><a href="#">Crane</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-1 md:col-span-2">
+                        <h3 class="text-2xl font-semibold border-l-4 border-ambers pl-4 mb-6 text-white  max-sm:text-sm">Kontak Kami</h3>
+                        <ul class="[&>*]:mb-4 [&>li>a:hover]:text-white md:text-base max-md:text-sm  max-sm:text-xs max-sm:[&>li>i]:hidden">
+                            <li><i class="fab fa-whatsapp mr-2"></i><a href="#">0811 8888 0898</a></li>
+                            <li><i class="fas fa-phone mr-2"></i><a href="#">0811 8888 0898</a></li>
+                            <li><i class="far fa-envelope mr-2"></i><a href="#">namaemail@gmail.com</a></li>
+                            <li><i class="fas fa-map-marker-alt mr-3"></i><a href="#">Alamat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center xl:mt-44 lg:pb-8 lg:mt-6">
+            <p class="font-thin md:text-sm max-md:text-xs">Copyright © 2023 
+                <a href="/">The Heavy Rental</a> - Powered by <a href="https://jasterweb.com" alt="Jasa Pembuatan Website" title="Jasa Pembuatan Website">@rza.dev</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        function Open() {
+            document.querySelector('.sidebar').classList.toggle('-left-80')
+        }
+    </script>
+</body>
+</html>

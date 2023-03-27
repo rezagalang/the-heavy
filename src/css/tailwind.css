@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hover-side {
+        @apply rounded-lg hover:bg-slate-400 hover:cursor-pointer transition-all duration-300;
+    }
+}
