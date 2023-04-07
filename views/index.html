@@ -30,7 +30,7 @@
             </ul>
         </div>
     </div>
-    <section class="bg-hero bg-cover text-white py-8" id="hero">
+    <section class="bg-hero bg-cover text-white py-8" id="home">
         <div class="container mx-auto">
             <div class="max-w-5xl mx-auto">
                 <header class="bg-header/30 py-[10px] rounded-xl border-solid border-4 border-white/10 lg:justify-center">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-smoke py-32" id="about">
+    <section class="relative bg-smoke py-32">
         <div class="container mx-auto">
             <div class="bg-primary text-white rounded-lg text-center flex justify-between absolute py-5 mx-auto left-0 right-0 sm:w-[80%] md:px-8 sm:px-4 md:-top-14 sm:-top-[60px] max-[640px]:w-[90%] max-[640px]:-top-14 max-[640px]:text-xs">
                 <div class="w-[30%]">
@@ -259,11 +259,31 @@
                 <a href="/">The Heavy Rental</a> - Powered by <a href="https://jasterweb.com" alt="Jasa Pembuatan Website" title="Jasa Pembuatan Website">@rza.dev</a>
             </p>
         </div>
+        <a href="#home" class="w-12 h-12 bg-secondary rounded-full text-center fixed bottom-5 right-5 cursor-pointer animate-bounce z-50 hidden text-white hover:bg-amber-600  transition-all duration-300" id="toTop">
+            <i class="fas fa-arrow-up fa-lg my-3 pt-0.5"></i>
+        </a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
         function Open() {
             document.querySelector('.sidebar').classList.toggle('-left-80')
         }
+        
+        // scroll ke atas 
+        $(window).scroll(function() {
+        if($(this).scrollTop() > 600) {
+            $('#toTop').show();
+        } else {
+            $('#toTop').hide();
+        }
+        });
+
+        $('#toTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+        });
     </script>
 </body>
 </html>

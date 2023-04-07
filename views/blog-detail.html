@@ -30,7 +30,7 @@
             </ul>
         </div>
     </div>
-    <section class="text-white">
+    <section class="text-white" id="home">
         <header class="bg-primary py-2">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
@@ -210,11 +210,31 @@
                 <a href="/">The Heavy Rental</a> - Powered by <a href="https://jasterweb.com" alt="Jasa Pembuatan Website" title="Jasa Pembuatan Website">@rza.dev</a>
             </p>
         </div>
+        <a href="#home" class="w-12 h-12 bg-secondary rounded-full text-center fixed bottom-5 right-5 cursor-pointer animate-bounce z-50 hidden text-white hover:bg-amber-600  transition-all duration-300" id="toTop">
+            <i class="fas fa-arrow-up fa-lg my-3 pt-0.5"></i>
+        </a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
         function Open() {
             document.querySelector('.sidebar').classList.toggle('-left-80')
         }
+        
+        // scroll ke atas 
+        $(window).scroll(function() {
+        if($(this).scrollTop() > 600) {
+            $('#toTop').show();
+        } else {
+            $('#toTop').hide();
+        }
+        });
+
+        $('#toTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+        });
     </script>
 </body>
 </html>
